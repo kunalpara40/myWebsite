@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Athletes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      animation: fadeIn 1.5s ease-in;
+       /* display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px 20px;
+      background-color: #002244;
+     color: white;
+   position: sticky; */
+   
+    }
+    header nav{
+                display: flex;
+                align-items: right;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #ff5f6d;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .athlete-card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      backdrop-filter: blur(8px);
+      transition: transform 0.3s ease, background 0.3s ease;
+      animation: zoomIn 0.8s ease forwards;
+      transform: scale(0.9);
+      opacity: 0;
+    }
+
+    .athlete-card:hover {
+      transform: scale(1.05);
+      background: rgba(255, 95, 109, 0.2);
+    }
+
+    .athlete-card img {
+      width: 100%;
+      border-radius: 0.5rem;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    .athlete-card h3 {
+      color: #ff5f6d;
+      margin-bottom: 0.5rem;
+    }
+
+    .athlete-card .sport {
+      font-size: 0.9rem;
+      color: #ccc;
+      margin-bottom: 0.8rem;
+    }
+
+    .athlete-card p {
+      font-size: 0.95rem;
+      color: #e0e0e0;
+    }
+    .athlete-card p a{
+        text-decoration: none;
+        color: white;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes zoomIn {
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #aaa;
+      font-size: 0.85rem;
+    }
+
+      header nav a{
+            text-decoration: none;
+            color: #f0007c;
+        }
+      header nav button{
+           border-radius: 10px;
+           width: 60px;
+        }
+  </style>
+</head>
+
+<body>
+  <header>
+     <nav>
+            <ul>
+               <button><a href="index.html"> HOME</a> </button>
+            </ul>
+        </nav>
+    <h1>Featured Athletes</h1>
+    <p>Meet the champions who inspire India in the world of sports</p>
+    
+  </header>
+
+  <section class="container">
+    <div class="athlete-card">
+      <img src="virat.webp" alt="Athlete 1">
+      <h3>Virat Kohli</h3>
+      <div class="sport">Cricket</div>
+      <p>Global cricket icon and brand ambassador....<a href="https://en.wikipedia.org/wiki/Virat_Kohli">Readmore</a></p>
+    </div>
+    <div class="athlete-card">
+      <img src="pvSindhu.webp" alt="Athlete 2">
+      <h3>P.V. Sindhu</h3>
+      <div class="sport">Badminton</div>
+      <p>World Champion and Olympic medalist representing Indian badminton globally.... <a href="https://en.wikipedia.org/wiki/P._V._Sindhu">Readmore</a></p>
+    </div>
+    <div class="athlete-card">
+      <img src="mary2.webp" alt="Athlete 3">
+      <h3>Mary Kom</h3>
+      <div class="sport">Boxing</div>
+      <p>Six-time World Champion and a symbol of strength and determination.... <a href="https://en.wikipedia.org/wiki/Mary_Kom">Readmore</a></p>
+    </div>
+    <div class="athlete-card">
+      <img src="rohit2.jpg" alt="Athlete 4">
+      <h3>Rohit Sharma</h3>
+      <div class="sport">Cricket</div>
+      <p>Indian cricketer known for his elegant batting style and record-breaking performances as an opener and captain.... <a href="https://en.wikipedia.org/wiki/Rohit_Sharma">Readmore</a></p>
+    </div>
+    <div class="athlete-card">
+      <img src="bajrang.avif" alt="Athlete 4">
+      <h3>Bajrang Punia</h3>
+      <div class="sport">Wrestling</div>
+      <p>Olympic Gold Medalist and one of India’s top track & field athletes... <a href="https://en.wikipedia.org/wiki/Bajrang_Punia">Readmore</a></p>
+    </div>
+   
+    <div class="athlete-card">
+      <img src="Neeraj-Chopra-Paris-Olympics-Paris-2024.webp" alt="Athlete 4">
+      <h3>Neeraj Chopra</h3>
+      <div class="sport">Wrestling</div>
+      <p>Indian javelin thrower and Olympic gold medalist renowned for his historic achievements in athletics.... <a href="https://en.wikipedia.org/wiki/Neeraj_Chopra">Readmore</a></p>
+    </div>
+    <div class="athlete-card">
+      <img src="ms.webp" alt="Athlete 4">
+      <h3>MS-Dhoni</h3>
+      <div class="sport">Cricket</div>
+      <p>Former Indian cricket captain,captain cool....<a href="https://en.wikipedia.org/wiki/MS_Dhoni">Readmore</a></p>
+    </div>
+    <div class="athlete-card">
+      <img src="sania.avif" alt="Athlete 4">
+      <h3>Sania Mirza</h3>
+      <div class="sport">tennis</div>
+      <p>Tennis star and global sports icon; one of India’s most recognized female athletes.... <a href="https://en.wikipedia.org/wiki/Sania_Mirza">Readmore</a></p>
+    </div>
+    <div class="athlete-card">
+      <img src="sania nehwal.avif" alt="Athlete 4">
+      <h3>Saina Nehwal </h3>
+      <div class="sport">batminton</div>
+      <p>Badminton champion and Olympic medalist; well-known sports personality and brand ambassador.... <a href="https://en.wikipedia.org/wiki/Saina_Nehwal">Readmore</a></p>
+    </div>
+    <div class="athlete-card">
+      <img src="sachin.webp" alt="Athlete 4">
+      <h3>Sachin Tendulkar</h3>
+      <div class="sport">cricket</div>
+      <p>Cricket legend, Bharat Ratna awardee, and a household name in India.... <a href="https://en.wikipedia.org/wiki/Sachin_Tendulkar">Readmore</a></p>
+    </div>
+    <div class="athlete-card">
+      <img src="abhinav.webp" alt="Athlete 4">
+      <h3>Abhinav Bindra </h3>
+      <div class="sport">shooting</div>
+      <p>First Indian to win individual Olympic gold; featured in sports development and mental health initiatives.... <a href="https://en.wikipedia.org/wiki/Abhinav_Bindra">Readmore</a></p>
+    </div>
+    <div class="athlete-card">
+      <img src="rani.webp" alt="Athlete 4">
+      <h3> Rani Rampal </h3>
+      <div class="sport">hockey</div>
+      <p> Former captain of the Indian women’s hockey team, known for leading India to historic victories and being a strong voice for women in sports.... <a href="https://en.wikipedia.org/wiki/Rani_Rampal">Readmore</a></p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Sports Dept. | Celebrating India's athletic pride
+  </footer>
+
+  <script>
+    // Scroll-trigger animation activation
+    const cards = document.querySelectorAll('.athlete-card');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animationPlayState = 'running';
+        }
+      });
+    }, { threshold: 0.2 });
+
+    cards.forEach(card => {
+      observer.observe(card);
+    });
+  </script>
+</body>
+
+</html>

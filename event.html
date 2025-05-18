@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sports Events</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #ffde59;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .event-card {
+      background: rgba(255, 255, 255, 0.1);
+      
+      border-left: 5px solid #ffde59;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      transition: transform 0.3s ease, background 0.3s ease;
+      backdrop-filter: blur(8px);
+      animation: slideIn 0.8s ease forwards;
+      transform: translateY(40px);
+      opacity: 0;
+      flex-direction: column;
+    }
+
+    .event-card:hover {
+      transform: scale(1.05);
+      background: rgba(209, 1, 1, 0.2);
+    }
+
+    .event-card h3 {
+      color: #e1ff00;
+      margin-bottom: 0.5rem;
+    }
+    .event-card h3 a{
+      text-decoration: none;
+      color: white;
+    }
+
+    .event-card .date {
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .event-card .location {
+      font-size: 0.9rem;
+      color: #ccc;
+      margin-bottom: 0.8rem;
+    }
+
+    .event-card p {
+      font-size: 0.95rem;
+      color: #e0e0e0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #aaa;
+      font-size: 0.85rem;
+    }
+    .background{
+       position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+    }
+  </style>
+</head>
+
+<body>
+  <video src="kapil.mp4" muted autoplay loop playsinline class="background"></video>
+  <header>
+    <h1> Sports Events</h1>
+    <p>Stay updated with the latest competitions, training camps, and sports festivals</p>
+  </header>
+
+  <section class="container">
+    <div class="event-card">
+      <h3><a href=""><img src="athlatic.png" alt="">National Athletics Meet</a></h3>
+      <div class="date">15 June 2025</div>
+      <div class="location">Jawaharlal Nehru Stadium, Delhi</div>
+      <p>Top athletes from all over India will compete in track & field events.</p>
+    </div>
+    <div class="event-card">
+      <h3><a href="https://www.indiansuperleague.com/"><img src="isl2.png" alt=""> Hero Indian Super League</a></h3>
+      <div class="date">05 July 2025</div>
+      <div class="location">Banglore, karnataka</div>
+      <p>ISL (Indian Super League) promotes professional football in India and develops domestic talent.</p>
+    </div>
+    <div class="event-card">
+     
+      <h3><a href="https://www.prokabaddi.com/"> <img src="pkl.png" alt="">Pro Kabaddi League</a></h3>
+      <div class="date">31 May & 1 June</div>
+      <div class="location">Player Auction</div>
+      <p>A multi-discipline youth event to  Promotes professional kabaddi.</p>
+    </div>
+    <div class="event-card">
+      
+      <h3> <a href="https://www.iplt20.com/"><img src="https://documents.iplt20.com//ipl/assets/images/ipl-logo-new-old.png" alt="">IPL</a></h3>
+      <div class="date">22 MARCH 2025</div>
+      <div class="location"> Across India</div>
+      <p>Cricket a professional T20 cricket league that features franchise teams and showcases top domestic and international talent.</p>
+    </div>
+    <div class="event-card">
+      <h3><a href="https://www.bcci.tv/domestic/291/ranji-trophy"><img src="bcci-logo-rounded.webp" alt="">Ranji Trophy</a></h3>
+      <div class="date">10 August 2025</div>
+      <div class="location">Maharashta Cricket Association</div>
+      <p>Domestic cricket for professional/first-class cricket.</p>
+    </div>
+    <div class="event-card">
+      <h3><a href="https://hockeyindialeague.com/"><img width="150" src="hil.webp" alt="">Hockey India League</a></h3>
+      <div class="date">10 september 2025</div>
+      <div class="location">New Delhi</div>
+      <p>promotes professional field hockey in India and nurtures national talent through league competition.</p>
+    </div>
+    <div class="event-card">
+      <h3><a href=""><img width="150" src="https://www.indianboxingcouncil.com/wp-content/uploads/2021/12/2022-IBC-Logo-500X500.png" alt="">  </a></h3>
+      <div class="date">25 may 2025</div>
+      <div class="location">New Delhi</div>
+      <p>organizes professional boxing competitions in India to promote the sport and develop emerging boxing talent.</p>
+    </div>
+    <div class="event-card">
+      <h3><a href="https://jr.nba.com/international/home/india/"><img width="150" src="Jr_NBA_WNBA_rgb.svg" alt="">NBA</a></h3>
+      <div class="date">21 June 2025</div>
+      <div class="location">Patiala, Punjab</div>
+      <p>The NBA India Games were more than just exhibition matches; they represented a significant step in promoting basketball .</p>
+    </div>
+   
+  </section>
+
+  <footer>
+    &copy; 2025 Sports Dept. | Events brought to you by Ministry of Youth Affairs & Sports
+  </footer>
+
+  <script>
+    // Scroll-trigger animation activation
+    const eventCards = document.querySelectorAll('.event-card');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animationPlayState = 'running';
+        }
+      });
+    }, { threshold: 0.2 });
+
+    eventCards.forEach(card => {
+      observer.observe(card);
+    });
+  </script>
+</body>
+
+</html>
