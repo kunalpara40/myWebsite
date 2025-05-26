@@ -16,7 +16,7 @@
   </style>
 </head>
 <body>
-  
+ 
   <div id="main-bg">
     <header>
      
@@ -115,7 +115,9 @@
   <footer>
     <p>© 2025 Sports Department of Government of India</p>
   </footer>
-
+  
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <script>
     const images = ["v1.jpg","v2.jpg","v4.jpg","sport.jpg", "my2.jpg", "my3.jpg"];
@@ -123,7 +125,7 @@
     const mainBg = document.getElementById('main-bg');
     const dotsContainer = document.getElementById('dots');
 
- 
+   
     images.forEach((_, index) => {
       const dot = document.createElement('span');
       dot.classList.add('dot');
@@ -143,26 +145,23 @@
     updateBackground();
     setInterval(updateBackground, 3000);
 
-    window.addEventListener('scroll', () => {
-      const text = document.querySelector('.text');
-      const textTop = text.getBoundingClientRect().top;
-      const windowHeight = window.innerHeight;
-
-      if (textTop < windowHeight - 50) {
-        text.classList.add('show');
+    
+  </script>
+ 
+  <script>
+    $(window).on("scroll", function () {
+      const text = $(".text");
+      if (text.offset().top < $(window).scrollTop() + $(window).height() - 50) {
+        text.addClass("show");
       } else {
-        text.classList.remove('show');
+        text.removeClass("show");
       }
-    });
-    window.addEventListener('scroll', () => {
-      const text = document.querySelector('.features');
-      const textTop = text.getBoundingClientRect().top;
-      const windowHeight = window.innerHeight;
 
-      if (textTop < windowHeight - 50) {
-        text.classList.add('show');
+      const features = $(".features");
+      if (features.length && features.offset().top < $(window).scrollTop() + $(window).height() - 50) {
+        features.addClass("show");
       } else {
-        text.classList.remove('show');
+        features.removeClass("show");
       }
     });
   </script>
@@ -207,3 +206,4 @@
   </script>
 </body>
 </html>
+
