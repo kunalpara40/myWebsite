@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Department Schemes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem 1rem;
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #ffbb00;
+        }
+        header p{
+            color: #ff0000;
+        }
+        header nav{
+            padding-left: 900px;
+            text-decoration: none;
+            cursor: pointer;
+            
+
+        }
+        header nav a{
+            text-decoration: none;
+            color: #f0007c;
+        }
+        header nav button{
+            border-radius: 10px;
+            width: 50px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease, background 0.3s ease;
+            animation: slideUp 0.8s ease forwards;
+            transform: translateY(30px);
+            opacity: 0;
+            text-decoration: none;
+        }
+
+        .card a {
+            text-decoration: none;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            background: rgba(0, 255, 255, 0.2);
+        }
+
+        .card h3 {
+            color: #f0007c;
+            margin-bottom: 1rem;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #ff0000ba;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #aaa;
+            font-size: 0.85rem;
+        }
+        .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+              <button> <a href="index.html"> HOME</a> </button>
+            </ul>
+        </nav>
+        <h1>Sports Department Schemes</h1>
+        <p>Explore the top government initiatives promoting sports in India</p>
+    </header>
+    <video src="marathon.mp4" autoplay muted loop playsinline class="background "></video>
+
+    <section class="container">
+        <div class="card">
+            <img src="kheloindia.svg" alt="">
+            <a href="https://kheloindia.gov.in/">
+                <h3>Khelo India</h3>
+            </a>
+
+            <p>Promotes grassroots sports and develops talent via scholarships, infrastructure, and training.</p>
+        </div>
+        <div class="card">
+           <img width="200" src="https://sportsauthorityofindia.nic.in/sai/assets/frontend/images/TOPS_Intro.jpg" alt="">
+               
+            <a
+            href="https://sportsauthorityofindia.nic.in/sai/target-olympic-podium#:~:text=TOPS%20(Target%20Olympic%20Podium%20Scheme,assistance%20to%20India's%20top%20athletes.">
+                <h3>TOPS (Target Olympic Podium)</h3>
+            </a>
+
+            <p>Supports elite athletes with world-class training and coaching to prepare for international events.</p>
+        </div>
+        <div class="card">
+            <img src="https://fitindia.gov.in/resources/imgs/fit-india_logo.png" alt="">
+            <a href="https://fitindia.gov.in/">
+                <h3>Fit India Movement</h3>
+            </a>
+
+            <p>Aims to make fitness an integral part of Indians' daily lives through campaigns and programs.</p>
+        </div>
+        <div class="card">
+            <img src="nsdf.png" alt="">
+            <a href="https://nsdf.yas.gov.in/">
+                <h3>NSDF</h3>
+            </a>
+
+            <p>National Sports Development Fund mobilizes private & public contributions to enhance sports excellence.
+            </p>
+        </div>
+        <div class="card">
+            <img src="https://sportsauthorityofindia.nic.in/sai_new/public/assets/front/img/logos/sai_logo.svg" alt="">
+            <a
+                href="https://sportsauthorityofindia.nic.in/sai/target-olympic-podium#:~:text=TOPS%20(Target%20Olympic%20Podium%20Scheme,assistance%20to%20India's%20top%20athletes.">
+                <h3>SAI Training Centres</h3>
+            </a>
+
+            <p>Centers that offer training, boarding, and facilities to identified sports talent across India.</p>
+        </div>
+        <div class="card">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIACAAIAMBIgACEQEDEQH/xAAaAAEAAgMBAAAAAAAAAAAAAAAGAwUCBAcB/8QAKBAAAQQBAwMEAgMAAAAAAAAAAQIDBAURABIhBjFBEyJRYQdxFDKB/8QAFwEAAwEAAAAAAAAAAAAAAAAAAgQFA//EACERAAEEAQMFAAAAAAAAAAAAAAIAAQMEERMxURIhIkHh/9oADAMBAAIRAxEAPwBL1n1HIn+pEh5EUE8pz7/sn4+tZU1BOrKb+dFLC7RSsqjSV4SpGCdoI5Sojz4Ojj1bIRc1jCqiDLmWMd0spmtgpaKSnC157pCSo7fnHbU19XVlLWWERcGml2TEMyQ+3WtILZ3YwpOCMfH6OlqFMidrEr+T+uFQt3WCN6sTYFt35SPpaY/FtLWkM19xthTciI6+sqWGnATsUTySkgjnnS+rWHVYe2FeMjBznXKWKOuldZS6tiLVxy5BacaD0NDiUkE7ilHAycjz486XdKBNRX2KJVfAhyoMv03XK9gNokjalSV7R29qxn451SlEd8qUJYUV+zHX1hBbsUAx0VslKlKVtAPqNYO7uk/BHOtNujpo0OVDCGfSlkiQpySouLSPJUfdxz+v901lR1TJG5sgL7cjgj7147HIASG/RGTkBpKgc+c6DULHZFhFZlVTWEpucoRjILbRRIbmqQpO0kAoUnt/bGR3zzqn6lu5MiZHrKltaW0LIQ82srU6oj3kK7qScjk/GdWf5GuXqqAY8TO+XuG4ICC0nxggZ8fXnWH4y6XccaZu7b1VK7xkOkFJBAwsef1pC0Zyvoi/xYSP1Ppiv//Z" alt="">
+            <a href="https://doppw.gov.in/en">
+                <h3>Pension & Welfare</h3>
+            </a>
+
+            <p>Provides pensions and financial assistance to retired athletes and those in need.</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Sports Dept. | Designed with ❤️ Kunal Paraskar
+    </footer>
+
+    <script>
+        // Trigger animations on scroll
+        const cards = document.querySelectorAll('.card');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                }
+            });
+        }, { threshold: 0.3 });
+
+        cards.forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+</body>
+
+</html>
